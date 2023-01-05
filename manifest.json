@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "capto",
+    "description": "to capture webpage",
+    "version": "1.0",
+    "icons":{
+      "16":"/img/img16.png",
+      "48":"/img/img32.png",
+      "128":"/img/img96.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts":          [ {
+      "js":       ["jquery.min.js","html2canvas.min.js", "contentScript.js" ],
+      "css": ["contentScript.css"],
+      "matches":  [ "<all_urls>"]
+    }],
+    "action": {
+      "default_popup": "popup.html",
+      "default_title": "CaptoMe!",
+      "default_icon": "/img/img96.png"
+    },
+    "content_security_policy": {
+      "extension_pages": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' "
+   }
+  }
