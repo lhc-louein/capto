@@ -2,7 +2,7 @@
 
 ## Getting started
 
-after cloning:
+after cloning/downloading this repository:
 - [ ] On Google chrome, please click the Three dot Menu > More Tools > Extensions
 - [ ] enable Developer Mode
 - [ ] select Load Unpacked
